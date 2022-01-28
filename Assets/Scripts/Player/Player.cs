@@ -92,6 +92,7 @@ public class Player : MonoBehaviour
         CollisionFlags l_CollisionFlags = m_CharacterController.Move(l_Movement);//Macara binaria para saber como hemos chocado, por arriba abajo
         if ((l_CollisionFlags & CollisionFlags.Below) != 0)//Colisiona con el suelo
         {
+            m_VerticalSpeed = 0; 
             m_OnGround = true;
             m_time = Time.time;
             m_CanControl = true;
