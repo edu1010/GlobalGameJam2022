@@ -1,4 +1,4 @@
 ﻿key,Spanish,English
-masterSlider,Volumen,Volume
-musicSlider,Volumen musica,Music volume 
+masterSlider,Volumen,Volume,vol
+musicSlider,Volumen musica,Music volume
 sfxSlider,Volumen sfx,Sfx volume

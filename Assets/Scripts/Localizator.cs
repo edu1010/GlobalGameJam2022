@@ -6,7 +6,7 @@ using System;
 public enum Language
 {
     Spanish = 0,
-    English
+    English,
 }
 
 

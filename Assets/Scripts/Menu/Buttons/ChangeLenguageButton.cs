@@ -11,16 +11,16 @@ public class ChangeLenguageButton : MonoBehaviour
     {
         Type type = typeof(Language);
         List<string> l_options = new List<string>();
-        //int i = 0;
+        int i = 0;
         foreach (string item in Enum.GetNames(type))
         {
 
             l_options.Add(item);
             if(item == Localizator.GetLocalizator().currentLanguage.ToString())
             {
-                //m_Button.value = i;
+                //m_Button.value = i+1;
             }
-           // i++;
+            i++;
         }
         m_Button.ClearOptions();
         m_Button.AddOptions(l_options);
@@ -29,7 +29,7 @@ public class ChangeLenguageButton : MonoBehaviour
 
     public void ButtonLanguage(int lenguageIndex)
     {
-        Language value = (Language)lenguageIndex;
+        Language value = (Language)lenguageIndex+1;
         Debug.Log(value);
         Localizator.GetLocalizator().SetLanguage(value);
     }
