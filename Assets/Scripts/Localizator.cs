@@ -5,9 +5,8 @@ using System;
 
 public enum Language
 {
-    English = 1,
-    Catalan,
-    Spanish
+    Spanish = 0,
+    English
 }
 
 
@@ -17,9 +16,11 @@ public class Localizator : MonoBehaviour
     private static Localizator loc = null;
     //un singleton para acceder desde cualquier lado
     private Dictionary<string, LanguageData> Dict; //Un dicionario
-    private Language currentLanguage;
+    public Language currentLanguage;
     public delegate void ChangeLangugaeDelegate();
     public static ChangeLangugaeDelegate OnChangeLanguageDelegate;
+    public Language DefaultLenguage;
+
     //Delegado para que al cambiar el idoma todos los elementos suscritos cambien de idioma
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,9 @@ public class Localizator : MonoBehaviour
         }
         else
             GameObject.Destroy(this);
+
+        currentLanguage = DefaultLenguage;
+        ReadText();
     }
 
     public static Localizator GetLocalizator()
@@ -54,29 +58,35 @@ public class Localizator : MonoBehaviour
         string[] lines = csvVariable.text.Split(new char[] { '\n' });
         for (int i = 0; i < lines.Length; i++)
         {
-            SaveLines(lines[i]);
+            if (lines.Length > 0)
+            {
+                
+                SaveLines(lines[i]);
+            }
         }
     }
 
     private void SaveLines(string anotherLine)
     {
-        string[] words = anotherLine.Split(new char[] { ';' });
+        string[] words = anotherLine.Split(new char[] { ',' });
         var langData = new LanguageData(words);
         if(Dict == null)
         {
             Dict = new Dictionary<string, LanguageData>();
         }
         Dict.Add(words[0], langData);
+       
     }
 
-    public static void SetLanguage(Language languageToChange)
+    public void SetLanguage(Language languageToChange)
     {
         loc.currentLanguage = languageToChange;
         OnChangeLanguageDelegate?.Invoke();
     }
 
-    public string RecieveText(string key)
+    public static string RecieveText(string key)
     {
+        Debug.Log("key " + key);
         return loc.Dict[key].GetText(loc.currentLanguage);
     }
 
