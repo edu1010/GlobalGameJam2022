@@ -31,18 +31,15 @@ public class ObjectReaction : MonoBehaviour, IterfaceInteractable
                 m_apeal = false;
             }
             timerColor += Time.deltaTime;
-            if (timerColor > 2f)
+            if (timerColor > 1.25f)
             {
                 ChangeColor(Color.black);
-                timerColor = 0f;
+                if (timerColor > 1.25*2f)
+                {
+                    ChangeColor(m_originalColor);
+                    timerColor = 0;
+                }
             }
-            else
-            {
-                ChangeColor(m_originalColor);
-            }
-                
-
-           
         }
         else
             ChangeColor(m_originalColor);
