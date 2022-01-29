@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public KeyCode m_UpKeyCode = KeyCode.W;
     public KeyCode m_DownKeyCode = KeyCode.S;
     public KeyCode m_ReloadCode = KeyCode.R;
+    public KeyCode m_InteractKey = KeyCode.E;
     private bool m_CanControl;
     private bool m_OnGround;
     private float m_time;
@@ -48,7 +49,9 @@ public class Player : MonoBehaviour
         {
             CameraMovement();
             Movement();
+            InteractObject();
         }
+       // _pressed = false;
     }
 
     private void CameraMovement()
@@ -110,6 +113,15 @@ public class Player : MonoBehaviour
             }
         }
 
+    }
+
+    private void InteractObject()
+    {
+       if(Input.GetKey(m_InteractKey))
+       {
+            _pressed = !_pressed;
+            Debug.Log("interact");
+        }
     }
 
 

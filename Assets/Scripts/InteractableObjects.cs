@@ -6,13 +6,15 @@ using UnityEngine;
 public class InteractableObjects : MonoBehaviour
 {
     public LayerMask WhatIsVisible;
-    private GameObject _player;
+    private GameObject _playerObj;
+    private Player _player;
 
-    public float range = 3f;
+    public float range;
     // Start is called before the first frame update
     void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");
+        _playerObj = GameObject.FindGameObjectWithTag("Player");
+        _player = GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -30,14 +32,17 @@ public class InteractableObjects : MonoBehaviour
 
     private void CheckDistance()
     {
-        float dist = Vector3.Distance(_player.transform.position, this.transform.position);
-        Debug.Log(dist);
+        float dist = Vector3.Distance(_playerObj.transform.position, this.transform.position);
+        //Debug.Log(dist);
         if (dist <= range)
         {
             //activate outline
             if(CheckAngle())
             {
-                
+                /*if(_player.Pressed)
+                {
+                    Debug.Log("interact");
+                }*/
             }
 
         }
@@ -47,18 +52,23 @@ public class InteractableObjects : MonoBehaviour
     private bool CheckAngle()
     {
         //comprobar angulo
-        RaycastHit2D checkAng = Physics2D.Raycast(this.transform.position, Vector3.forward, range, WhatIsVisible);
+        //RaycastHit2D checkAng = Physics2D.Raycast(this.transform.position, Vector3.forward, range, WhatIsVisible);
         return true;
     }
 
     private void OnBecameVisible()
     {
         CheckDistance();
-        Debug.Log("visible");
+        //Debug.Log("visible");
     }
 
     private void OnBecameInvisible()
     {
-        Debug.Log("Invisible");
+        //Debug.Log("Invisible");
+    }
+
+    public virtual void Interaction()
+    {
+        //method for interaction with objects if necessary idk
     }
 }
