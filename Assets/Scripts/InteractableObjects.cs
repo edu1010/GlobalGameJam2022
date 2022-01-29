@@ -33,7 +33,10 @@ public class InteractableObjects : MonoBehaviour
             CheckDistance();
             CheckAngle();
         }
-        Interaction();
+        if (pressed)
+        {
+            Interaction();
+        }
     }
 
     //onbecome visible, when true check distance, inf distance < than smth then shader, press a button, blur the background 
@@ -78,6 +81,7 @@ public class InteractableObjects : MonoBehaviour
     {
         visible = false;
         interactable = false;
+        pressed = false;
         //Debug.Log("Invisible");
     }
 
@@ -86,7 +90,7 @@ public class InteractableObjects : MonoBehaviour
         //method for interaction with objects if necessary idk
         if (interactable)
         {
-            if (CheckAngle() && pressed)
+            if (pressed)
             {
                 Debug.Log("interact");
             }
