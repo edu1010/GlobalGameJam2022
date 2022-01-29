@@ -6,7 +6,7 @@ public class ExitSettings : MonoBehaviour, IPointerClickHandler
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        MenusController.GetMenuController().ShowCanvasPlay();
+        MenusController.GetMenuController().ShowCanvasPlayMenu();
     }
 
     // Start is called before the first frame update

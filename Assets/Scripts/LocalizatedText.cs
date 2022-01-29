@@ -32,5 +32,7 @@ public class LocalizatedText : MonoBehaviour
     private void SetText()
     {
         _text.text = Localizator.RecieveText(Key);
+        //String enviar a funcion que mire si hay caracteres espeical
     }
+
 }

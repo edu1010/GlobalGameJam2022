@@ -6,8 +6,10 @@ public class MenusController : MonoBehaviour
 {
     public GameObject m_MenuPlay;
     public GameObject m_MenuPause;
+    public GameObject m_Hud;
     CanvasGroup m_CanvasPlay;
     CanvasGroup m_CanvasPause;
+    CanvasGroup m_CanvasHud;
     
     static MenusController m_MenusController = null;
     private void Awake()
@@ -28,16 +30,24 @@ public class MenusController : MonoBehaviour
     {
         m_CanvasPlay = m_MenuPlay.GetComponent<CanvasGroup>();
         m_CanvasPause = m_MenuPause.GetComponent<CanvasGroup>();
+        m_CanvasHud = m_Hud.GetComponent<CanvasGroup>();
     }
-    public void ShowCanvasPlay()
+    public void ShowCanvasPlayMenu()
     {
         ShowMenu(m_CanvasPlay);
         HideMenu(m_CanvasPause);
+        HideMenu(m_CanvasHud);
+    }  public void ShowCanvasHud()
+    {
+        ShowMenu(m_CanvasHud);
+        HideMenu(m_CanvasPause);
+        HideMenu(m_CanvasPlay);
     }
     public void ShowCanvasPause()
     {
         ShowMenu(m_CanvasPause);
         HideMenu(m_CanvasPlay);
+        HideMenu(m_CanvasHud);
     }
     void ShowMenu(CanvasGroup canvasGroup)
     {

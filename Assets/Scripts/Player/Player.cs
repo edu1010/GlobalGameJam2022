@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     [Header("Gravity")]
     public float m_VerticalSpeed = 0.0f;
     public float m_GravityMultiplayer= 4;
-
+    public bool m_Pause = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,8 +40,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CameraMovement();
-        Movement();
+        if (!m_Pause)
+        {
+            CameraMovement();
+            Movement();
+        }
     }
 
     private void CameraMovement()
@@ -81,8 +84,6 @@ public class Player : MonoBehaviour
             l_Movement.Normalize();
         }
 
-        //Apply momentum
-        //l_Movement += m_CharacterVelocityMomemtum;
         l_Movement = l_Movement * Time.deltaTime * m_Speed;
         m_VerticalSpeed += Physics.gravity.y * Time.deltaTime * m_GravityMultiplayer;
         l_Movement.y = m_VerticalSpeed * Time.deltaTime;
