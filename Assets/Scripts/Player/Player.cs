@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Camera m_Camera;
     float m_Yaw;
     float m_Pitch;
+    public Vector3 m_Forward;
     [Header("Camera")]
     public float m_YawRotationalSpeed = 360.0f;
     public float m_PitchRotationalSpeed = 180.0f;
@@ -36,6 +37,9 @@ public class Player : MonoBehaviour
 
     private bool _pressed = false;
     public bool Pressed => _pressed;
+    [Header("Objects")]
+    public LayerMask m_LayerMask;
+    public float m_distance = 20;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +55,7 @@ public class Player : MonoBehaviour
             CameraMovement();
             Movement();
             InteractObject();
+            CheckObjects();
         }
        // _pressed = false;
     }
@@ -77,14 +82,14 @@ public class Player : MonoBehaviour
         Vector3 l_Movement = Vector3.zero;
         float l_YawInRadians = m_Yaw * Mathf.Deg2Rad;
         float l_Yaw90InRadians = (m_Yaw + 90.0f) * Mathf.Deg2Rad;
-        Vector3 l_Forward = new Vector3(Mathf.Sin(l_YawInRadians), 0.0f, Mathf.Cos(l_YawInRadians));
+        m_Forward = new Vector3(Mathf.Sin(l_YawInRadians), 0.0f, Mathf.Cos(l_YawInRadians));
         Vector3 l_Right = new Vector3(Mathf.Sin(l_Yaw90InRadians), 0.0f, Mathf.Cos(l_Yaw90InRadians));
         if (m_CanControl)
         {
             if (Input.GetKey(m_UpKeyCode))
-                l_Movement += l_Forward;
+                l_Movement += m_Forward;
             else if (Input.GetKey(m_DownKeyCode))
-                l_Movement = -l_Forward;
+                l_Movement = -m_Forward;
             if (Input.GetKey(m_RightKeyCode))
                 l_Movement += l_Right;
             else if (Input.GetKey(m_LeftKeyCode))
@@ -120,10 +125,32 @@ public class Player : MonoBehaviour
     {
        if(Input.GetKey(m_InteractKey))
        {
-            _pressed = !_pressed;
+            _pressed = true;
 
+        }
+        else
+        {
+            _pressed = false;
         }
     }
 
+    public void CheckObjects()
+    {
+        RaycastHit hit;
 
+        Vector3 p1 = transform.position + m_CharacterController.center;
+        float distanceToObstacle = 0;
+
+        // Cast a sphere wrapping character controller 10 meters forward
+        // to see if it is about to hit anything.
+        if (Physics.SphereCast(p1, m_CharacterController.height / 2, m_Camera.transform.forward, out hit, m_distance, m_LayerMask))
+        {
+            hit.transform.GetComponent<IterfaceInteractable>()?.AppealInteractuable();
+            if (Input.GetKey(m_InteractKey))
+            {
+                hit.transform.GetComponent<IterfaceInteractable>()?.Interact();
+            }
+        }
+    }
 }
+

@@ -183,17 +183,17 @@ public class LevelsData : MonoBehaviour
                 else if (friends >= 3)
                     LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA2);
                 else
-                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.NoviaOamigo);
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.NoviaOAmigo);
                 break;
             case ((int)SceneNames.IrA):
                 if (friends >= 3)
                     LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA2);
                 else if (partner)
-                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.NoviaOamigo);
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.NoviaOAmigo);
                 else
                     LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Llamada);
                 break;
-            case ((int)SceneNames.NoviaOamigo):
+            case ((int)SceneNames.NoviaOAmigo):
                 LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Llamada);
                 break;
             case ((int)SceneNames.Llamada):
@@ -372,7 +372,7 @@ public enum SceneNames
     Peli,
     IrA,
     IrA2,
-    NoviaOamigo,
+    NoviaOAmigo,
     ContestarLlamada,
     RobarAlsuper,
     Comprar2,
