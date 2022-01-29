@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
     public KeyCode m_UpKeyCode = KeyCode.W;
     public KeyCode m_DownKeyCode = KeyCode.S;
     public KeyCode m_ReloadCode = KeyCode.R;
+    public KeyCode m_InteractKey = KeyCode.E;
     private bool m_CanControl;
     private bool m_OnGround;
     private float m_time;
@@ -31,6 +33,10 @@ public class Player : MonoBehaviour
     public float m_VerticalSpeed = 0.0f;
     public float m_GravityMultiplayer= 4;
     public bool m_Pause = false;
+
+    private bool _pressed = false;
+    public bool Pressed => _pressed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +50,9 @@ public class Player : MonoBehaviour
         {
             CameraMovement();
             Movement();
+            InteractObject();
         }
+       // _pressed = false;
     }
 
     private void CameraMovement()
@@ -106,6 +114,15 @@ public class Player : MonoBehaviour
             }
         }
 
+    }
+
+    private void InteractObject()
+    {
+       if(Input.GetKey(m_InteractKey))
+       {
+            _pressed = !_pressed;
+
+        }
     }
 
 
