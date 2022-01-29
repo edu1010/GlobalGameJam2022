@@ -31,6 +31,10 @@ public class Player : MonoBehaviour
     public float m_VerticalSpeed = 0.0f;
     public float m_GravityMultiplayer= 4;
     public bool m_Pause = false;
+
+    private bool _pressed = false;
+    public bool Pressed => _pressed;
+
     // Start is called before the first frame update
     void Start()
     {
