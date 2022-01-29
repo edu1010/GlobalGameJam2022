@@ -10,17 +10,30 @@ public class InteractableObjects : MonoBehaviour
     private Player _player;
 
     public float range;
+    private bool pressed = false;
+    private bool visible = false;
+    private bool interactable = false;
     // Start is called before the first frame update
     void Start()
     {
         _playerObj = GameObject.FindGameObjectWithTag("Player");
-        _player = GetComponent<Player>();
+        _player = _playerObj.GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (_player.Pressed)
+        {
+            //Debug.Log("interact");
+            pressed = !pressed;
+        }
+        if(visible)
+        {
+            CheckDistance();
+            CheckAngle();
+        }
+        Interaction();
     }
 
     //onbecome visible, when true check distance, inf distance < than smth then shader, press a button, blur the background 
@@ -37,14 +50,7 @@ public class InteractableObjects : MonoBehaviour
         if (dist <= range)
         {
             //activate outline
-            if(CheckAngle())
-            {
-                /*if(_player.Pressed)
-                {
-                    Debug.Log("interact");
-                }*/
-            }
-
+            interactable = true;
         }
             
     }
@@ -53,22 +59,37 @@ public class InteractableObjects : MonoBehaviour
     {
         //comprobar angulo
         //RaycastHit2D checkAng = Physics2D.Raycast(this.transform.position, Vector3.forward, range, WhatIsVisible);
-        return true;
+        //RaycastHit2D checkPlayerAng = Physics2D.Raycast(_playerObj.transform.position, Vector3.forward, range, WhatIsVisible);
+        float checkedVector = Vector3.Dot(_playerObj.transform.forward, transform.forward);
+        //Debug.Log(checkedVector);
+        if (checkedVector > 0.5)
+            return true;
+        else
+            return false;
     }
 
     private void OnBecameVisible()
     {
-        CheckDistance();
+        visible = true;
         //Debug.Log("visible");
     }
 
     private void OnBecameInvisible()
     {
+        visible = false;
+        interactable = false;
         //Debug.Log("Invisible");
     }
 
-    public virtual void Interaction()
+    public void Interaction()
     {
         //method for interaction with objects if necessary idk
+        if (interactable)
+        {
+            if (CheckAngle() && pressed)
+            {
+                Debug.Log("interact");
+            }
+        }
     }
 }

@@ -234,7 +234,7 @@ MonoBehaviour:
   WhatIsVisible:
     serializedVersion: 2
     m_Bits: 1
-  range: 5
+  range: 2
 --- !u!20 &265143146 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3945916704965841097, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}

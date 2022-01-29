@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -120,7 +121,7 @@ public class Player : MonoBehaviour
        if(Input.GetKey(m_InteractKey))
        {
             _pressed = !_pressed;
-            Debug.Log("interact");
+
         }
     }
 
