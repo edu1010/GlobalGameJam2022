@@ -479,6 +479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Localizator
       objectReference: {fileID: 0}
+    - target: {fileID: 4185428474784357658, guid: e38c4edcd660c7e4693b9a8df7a20060, type: 3}
+      propertyPath: DefaultLenguage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4185428474784357659, guid: e38c4edcd660c7e4693b9a8df7a20060, type: 3}
       propertyPath: m_RootOrder
       value: 5
