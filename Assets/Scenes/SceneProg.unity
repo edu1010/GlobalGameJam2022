@@ -135,10 +135,10 @@ GameObject:
   - component: {fileID: 153452438}
   - component: {fileID: 153452437}
   - component: {fileID: 153452436}
-  - component: {fileID: 153452440}
-  m_Layer: 0
+  - component: {fileID: 153452441}
+  m_Layer: 10
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 4793a0a127517f740ac49d0911841662, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,13 +213,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153452435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.02}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -1.18, y: 2.13, z: 4.02}
+  m_LocalScale: {x: 0.85144, y: 0.85144, z: 0.85144}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &153452440
+--- !u!114 &153452441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,13 +228,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 153452435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1044ff88b967cd4ca82414b72d624d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 919ac4ff0a9dfed499405c0def1a751f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WhatIsVisible:
-    serializedVersion: 2
-    m_Bits: 1
-  range: 2
 --- !u!20 &265143146 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3945916704965841097, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}
@@ -575,6 +571,10 @@ PrefabInstance:
     - target: {fileID: 3945916706013491476, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945916706013491477, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}
+      propertyPath: m_LayerMask.m_Bits
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 3945916706013491478, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}
       propertyPath: m_Name
