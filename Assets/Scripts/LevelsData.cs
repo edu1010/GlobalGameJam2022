@@ -7,13 +7,16 @@ public class LevelsData : MonoBehaviour
     int otaku = 0;
     int family = 0;
     int friends = 0;
-    int partner = 0;//girlfriend boyfriend
+    bool partner = false;//girlfriend boyfriend Cuando se pone a true?
+    bool work = false;//Cuando se pone a true?
     int happines = 0;
+    bool armario = false;
     static LevelsData m_LevelData = null;
     int currentSceneIndex = 0;
-    public List<string> m_ChildScenes;
-    public string[] m_YoungScenes;
-    public string[] m_AdultScenes;
+    public List<SceneNames> m_ChildScenes;
+    public List<SceneNames> m_TenegerScenes;
+    public List<SceneNames> m_UniversityScenes;
+    public List<SceneNames> m_AdultScenes;
     
     private void Awake()
     {
@@ -41,10 +44,10 @@ public class LevelsData : MonoBehaviour
                 friends += quantity;
                 break;
             case ("partner"):
-                partner += quantity;
+                partner = 1==quantity;
                 break;
             case ("happines"):
-                partner += quantity;
+                happines += quantity;
                 break;
         }
     }
@@ -54,35 +57,175 @@ public class LevelsData : MonoBehaviour
     }
     public void CalculateNextScene(etapas etapa)
     {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         switch (etapa)
         {
             case (etapas.child):
+                CalculateSceneChild();
                 break; 
-            case (etapas.young):
+            case (etapas.teneger):
+                CalculateSceneTenneger();
+                break; 
+            case (etapas.university):
+                CalculateUni();
                 break;
             case (etapas.adult):
                 break;
         }
     }
-    public void Child()
+    public void CalculateSceneChild()
     {
-        //3 escenas 1 se repite deberemos ponerla dos veces en el indice de build
-        //Quito la escena de la carga y cargo una escena
-        m_ChildScenes.Remove(SceneManager.GetActiveScene().ToString());
-        if (m_ChildScenes.Count > 0)
+        
+        if (currentSceneIndex < 4)
         {
-            int l_scene = Random.Range(0, m_ChildScenes.Count);
-            LevelController.GetLoadLevel().LoadNextLevel(m_ChildScenes[l_scene]);
+            LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
         }
         else
         {
-            CalculateNextScene(etapas.young);
+            CalculateSceneTenneger();
         }
+        
+    }
+    public void CalculateSceneTenneger()
+    {
+        switch (currentSceneIndex)
+        {
+            case ((int)SceneNames.QuienTeGusta):
+                LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                break;
+            case ((int)SceneNames.HermanoOAmigos):
+                LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                break;
+            case ((int)SceneNames.Declararte):
+                LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                break;
+            case ((int)SceneNames.Llamada):
+                LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                break;
+            case ((int)SceneNames.Jugar):
+                LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                break;
+            case ((int)SceneNames.Comprar):
+                LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                break;
+            case ((int)SceneNames.EstudiarOQuedar):
+                LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                break;
+             case ((int)SceneNames.ParejaHermanoTeTiraCaña):
+                if (otaku >= 3)
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel(currentSceneIndex + 1);
+                }
+                else if (friends >= 3)
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.GuardarTabaco);
+                }
+                else
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.HablarPadres2);
+                }
+                break;
+
+             case ((int)SceneNames.HablarPadres):
+                if (friends >= 3)
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.GuardarTabaco);
+                }
+                else
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.HablarPadres2);
+                }
+                break;
+             case ((int)SceneNames.GuardarTabaco):
+                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Dinero);
+                break;
+             case ((int)SceneNames.Dinero):
+                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.HablarPadres2);
+                break;
+             case ((int)SceneNames.HablarPadres2):
+                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.EstudiarOtrabajar);
+                break;
+             case ((int)SceneNames.EstudiarOtrabajar):
+                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Estudiar);
+                break;
+              case ((int)SceneNames.Estudiar):
+                CalculateUni();
+                break;
+             
+
+        }
+    }
+    public void CalculateUni()
+    {
+        switch (currentSceneIndex)
+        {
+            case ((int)SceneNames.ComidaElaborada):
+                if(partner)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Peli);
+                else if(otaku>=3)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA);
+                else if(friends>=3)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA2);
+                else
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Llamada);
+                break;
+            case ((int)SceneNames.Peli):
+                if (otaku >= 3)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA);
+                else if (friends >= 3)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA2);
+                else
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.NoviaOamigo);
+                break;
+            case ((int)SceneNames.IrA):
+                if (friends >= 3)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA2);
+                else if (partner)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.NoviaOamigo);
+                else
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Llamada);
+                break;
+            case ((int)SceneNames.NoviaOamigo):
+                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Llamada);
+                break;
+            case ((int)SceneNames.Llamada):
+                if (friends >= 3)
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.RobarAlsuper);
+                }else if (otaku >= 3)
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Comprar2);
+                }
+                else if(work)
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.QuedadaTrabajo);
+                }
+                else
+                {
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.PedirDinero);
+                }
+                           break;
+            case ((int)SceneNames.RobarAlsuper):
+
+                           break;
+            case ((int)SceneNames.Comprar2):
+                           break;
+            case ((int)SceneNames.JugarCon):
+                           break;
+            case ((int)SceneNames.QuedadaTrabajo):
+                           break;
+            case ((int)SceneNames.Dinero2):
+                           break;
+            case ((int)SceneNames.PedirDinero):
+                           break;
+
+        }
+
     }
 }
 public enum DecisionsVars
 {
-    otaku,
+    otaku ,
     family ,
     friends,
     partner,
@@ -91,6 +234,53 @@ public enum DecisionsVars
 public enum etapas
 {
     child,
-    young,
+    teneger,
+    university,
     adult
+}
+
+public enum SceneNames
+{
+    ObjetosNuevo=0,
+    CalleOCasa,
+    Hermano,
+    CalleOCasa2,
+    QuienTeGusta,//ADOLESCENTE
+    HermanoOAmigos,
+    Declararte,
+    Llamada,
+    Jugar,
+    Comprar,
+    EstudiarOQuedar,
+    ParejaHermanoTeTiraCaña,
+    HablarPadres,
+    GuardarTabaco, 
+    Dinero,
+    HablarPadres2,
+    EstudiarOtrabajar,
+    Estudiar,
+    ComidaElaborada,//uni
+    Peli,
+    IrA,
+    IrA2,
+    NoviaOamigo,
+    ContestarLlamada,
+    RobarAlsuper,
+    Comprar2,
+    JugarCon,
+    QuedadaTrabajo,
+    Dinero2,
+    PedirDinero,
+    HacerFavor,
+    InvertirCripto,
+    QuedarAmiga,
+    IrA3,
+    TenerHijos,
+    TrabjarTraficante,//Opcional
+    CelebrarCumplePareja,
+    IrATrabajar,
+    Vacaciones,
+    CambiarCasa,
+    TrabajarMas
+
 }
