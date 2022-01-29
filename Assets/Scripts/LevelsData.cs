@@ -8,6 +8,7 @@ public class LevelsData : MonoBehaviour
     int family = 0;
     int friends = 0;
     int partner = 0;//girlfriend boyfriend
+    int happines = 0;
     static LevelsData m_LevelData = null;
     int currentSceneIndex = 0;
     public List<string> m_ChildScenes;
@@ -40,6 +41,9 @@ public class LevelsData : MonoBehaviour
                 friends += quantity;
                 break;
             case ("partner"):
+                partner += quantity;
+                break;
+            case ("happines"):
                 partner += quantity;
                 break;
         }
@@ -81,7 +85,8 @@ public enum DecisionsVars
     otaku,
     family ,
     friends,
-    partner
+    partner,
+    happines
 }
 public enum etapas
 {
