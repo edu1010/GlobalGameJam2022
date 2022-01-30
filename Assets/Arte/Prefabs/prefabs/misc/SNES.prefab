@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 7072051490165821711}
   - component: {fileID: 1831249914582346802}
   - component: {fileID: 324619109321817823}
-  m_Layer: 0
+  - component: {fileID: 4963314080404713368}
+  - component: {fileID: 5444536748118989758}
+  m_Layer: 10
   m_Name: SNES
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,3 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4963314080404713368
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995382695158666070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9166428700591565276, guid: 94260e3107933d04e8b3cfbe6d5916d0, type: 3}
+--- !u!114 &5444536748118989758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995382695158666070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919ac4ff0a9dfed499405c0def1a751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
