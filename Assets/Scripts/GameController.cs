@@ -28,6 +28,13 @@ public class GameController : MonoBehaviour
         m_Player.m_Pause = true;
         ShoweMouse();
         MenusController.GetMenuController().ShowCanvasPause();
+    } 
+    public void InitialPauseGame()
+    {
+        //Time.timeScale = 0f;
+        m_Player.m_Pause = true;
+        ShoweMouse();
+        MenusController.GetMenuController().ShowCanvasPlayMenu();
     }
     public void ResumeGame()
     {

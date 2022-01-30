@@ -31,6 +31,7 @@ public class MenusController : MonoBehaviour
         m_CanvasPlay = m_MenuPlay.GetComponent<CanvasGroup>();
         m_CanvasPause = m_MenuPause.GetComponent<CanvasGroup>();
         m_CanvasHud = m_Hud.GetComponent<CanvasGroup>();
+        GameController.GetGameController().InitialPauseGame();
     }
     public void ShowCanvasPlayMenu()
     {
@@ -39,6 +40,7 @@ public class MenusController : MonoBehaviour
         HideMenu(m_CanvasHud);
     }  public void ShowCanvasHud()
     {
+        GameController.GetGameController().ResumeGame();
         ShowMenu(m_CanvasHud);
         HideMenu(m_CanvasPause);
         HideMenu(m_CanvasPlay);
