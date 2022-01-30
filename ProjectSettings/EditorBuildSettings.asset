@@ -24,7 +24,106 @@ EditorBuildSettings:
     path: Assets/Scenes/StoryScenes/Teenager/QuienTeGusta.unity
     guid: c67ccfa4d8dfa8c41ba0b0fcab0e09af
   - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/HermanoOAmigos.unity
+    guid: b0ce11d02246fa942864d860148d5519
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/Declararte.unity
+    guid: 0461da62b18217e4781825b5b908415f
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/Llamada.unity
+    guid: f25aeaece3c32c34489a091e0e63aa74
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/Jugar.unity
+    guid: 25956cbe350e7d1428624c98783199eb
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/Comprar.unity
+    guid: 7b082f40ce4769642bff939df6058c1d
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/EstudiarOQuedar.unity
+    guid: a16a560e5843a9f4d996faf48bc4fdc2
+  - enabled: 1
+    path: "Assets/Scenes/StoryScenes/Teenager/ParejaHermanoTeTiraCa\xF1a.unity"
+    guid: d8153ad58834e1e4283bd1998246e420
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/HablarPadres.unity
+    guid: b2db5e4239d0c15459e1afbdd57e0e94
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/GuardarTabaco.unity
+    guid: d6722c2899908b8498298d76759e299f
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/Dinero.unity
+    guid: dfffa4239c29a4d4abacebf9a00ba78d
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/HablarPadres2.unity
+    guid: f29a933d85715d74aab3985808fedabb
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/EstudiarOtrabajar.unity
+    guid: d32d4da6fe43c164da4c3824a10e8069
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Teenager/Estudiar.unity
+    guid: 1496f79324c3ff747af76e6e5fc3b67e
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/ComidaElaborada.unity
+    guid: dbcaf36962bd5824ea8acdaa9f6c351e
+  - enabled: 1
     path: Assets/Scenes/StoryScenes/University/Peli.unity
     guid: 96d2ae71849499f4e88b5a66c3e985c4
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/IrA.unity
+    guid: 86d7b24bfcd2a494fb36906ab52ba382
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/IrA2.unity
+    guid: d768403c8a7260d4aade891ab6298671
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/NoviaOAmigo.unity
+    guid: 330c5aeca2a7bdf429e431ae71a44f47
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/ContestarLlamada.unity
+    guid: 3dd256e8be1344442a7fa069743add9c
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/RobarAlsuper.unity
+    guid: a9cb4e97c48e6114dbf65e629b43c704
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/Comprar2.unity
+    guid: 46085ccf60d40ea42aa33099a55cc508
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/JugarCon.unity
+    guid: 8f1ade9c8f2964646bb755f74d544196
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/QuedadaTrabajo.unity
+    guid: a437def5b08ad1546ab621d0a8d73d02
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/Dinero2.unity
+    guid: c0f8eac6af55f4541b27aae2fe159225
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/University/PedirDinero.unity
+    guid: 56de4139c82b07541b180c94fa3086ef
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/HacerFavor.unity
+    guid: c0ab3883ed281fe47abad055b68928cb
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/QuedarAmiga.unity
+    guid: f65dda24509d4394faa068b141d4e87e
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/IrA4.unity
+    guid: f5b8f831367fe2f44821be57f2b1cea9
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/TenerHijos.unity
+    guid: 86b725029ea3aa64db7d19a2b91c867a
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/TrabjarTraficante.unity
+    guid: 3ef0086ac38bf094ba38b914d63a9f0f
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/CelebrarCumplePareja.unity
+    guid: dda947e380a74f34d80dd12efb759e40
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/Vacaciones.unity
+    guid: 0f97d7a06fd6d64429d7540803983677
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Adult/TrabajarMas.unity
+    guid: f9140effe25cde346845dc20ebd8bd2d
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/Creditos.unity
+    guid: ebc635a14b428884bb82e312e372218f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0d736296562bc7d4ebbd24cf2762c661, type: 2}

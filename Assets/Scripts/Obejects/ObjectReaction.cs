@@ -29,7 +29,7 @@ public class ObjectReaction : MonoBehaviour, IterfaceInteractable
             timerColor += Time.deltaTime;
             if (timerColor > 1.25f)
             {
-                ChangeColor(Color.black);
+                ChangeColor(Color.red);
                 if (timerColor > 1.25*2f)
                 {
                     ChangeColor(m_originalColor);

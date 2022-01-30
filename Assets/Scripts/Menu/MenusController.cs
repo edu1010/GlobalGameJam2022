@@ -57,13 +57,13 @@ public class MenusController : MonoBehaviour
     {
         canvasGroup.interactable = true;
         canvasGroup.alpha = 1;
-        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
     }
     void HideMenu(CanvasGroup canvasGroup)
     {
         canvasGroup.interactable = false;
         canvasGroup.alpha = 0;
-        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
     }
 
     public static MenusController GetMenuController()
