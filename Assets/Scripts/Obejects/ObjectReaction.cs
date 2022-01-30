@@ -51,9 +51,8 @@ public class ObjectReaction : MonoBehaviour, IterfaceInteractable
 
     public void Interact()
     {
-        
-        Color nNew = Color.blue;//do whatever you want here
-        _mat.SetColor("_BaseColor", nNew);
+        ChangeColor(m_originalColor);
+        GameController.GetGameController().GetPlayer().StartObservingObject(gameObject);
     }
     public void ChangeColor(Color color)
     {
