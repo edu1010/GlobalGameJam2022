@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 5915245626987718279}
   - component: {fileID: 3252407199721978300}
   - component: {fileID: 2509907655834854710}
-  m_Layer: 0
+  - component: {fileID: 7061736694485128989}
+  - component: {fileID: 6679942216140893870}
+  m_Layer: 10
   m_Name: Libro02
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,3 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7061736694485128989
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7962763137840985596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -443671485691627106, guid: 354dd4243ec8e654eadbd0592c95abe3, type: 3}
+--- !u!114 &6679942216140893870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7962763137840985596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919ac4ff0a9dfed499405c0def1a751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     public KeyCode m_DownKeyCode = KeyCode.S;
     public KeyCode m_ReloadCode = KeyCode.R;
     public KeyCode m_InteractKey = KeyCode.E;
+    public KeyCode m_PauseKey = KeyCode.Escape;
     private bool m_CanControl;
     private bool m_OnGround;
     private float m_time;
@@ -59,6 +60,10 @@ public class Player : MonoBehaviour
     {
         if (!m_Pause)
         {
+            if (Input.GetKeyDown(m_PauseKey))
+            {
+                GameController.GetGameController().PauseGame();
+            }
             if (!m_WachingObject)
             {
                 CameraMovement();
@@ -78,7 +83,14 @@ public class Player : MonoBehaviour
             {
                 UpdateObject();
             }
-            
+
+        }
+        else
+        {
+            if (Input.GetKeyDown(m_PauseKey))
+            {
+                GameController.GetGameController().ResumeGame();
+            }
         }
        // _pressed = false;
     }
@@ -182,7 +194,9 @@ public class Player : MonoBehaviour
         m_Object.transform.position = transform.TransformPoint(ObjectPos.transform.position);
         m_Object.transform.position = (ObjectPos.transform.position);
         m_WachingObject = true;
-        
+        MenusController.GetMenuController().ActivateText();
+
+
     }
     public void UpdateObject()
     {
@@ -207,6 +221,7 @@ public class Player : MonoBehaviour
                 Destroy(m_Object);
                 m_timerOb = 0;
                 m_TimerSoltar = 1f;
+                MenusController.GetMenuController().DesactivateText();
             }
         }
         

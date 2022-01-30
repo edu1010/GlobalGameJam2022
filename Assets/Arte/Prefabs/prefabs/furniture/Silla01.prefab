@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4704146190999404203}
   - component: {fileID: 6140533475993527391}
   - component: {fileID: 7141833755791818426}
+  - component: {fileID: 8300461707853615933}
   m_Layer: 0
   m_Name: Silla01
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8300461707853615933
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7640243211702159878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4606788221895372553, guid: 67a3b1d6ddc894345bfc459e9efacafb, type: 3}

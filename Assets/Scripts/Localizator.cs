@@ -76,7 +76,9 @@ public class Localizator : MonoBehaviour
             Dict = new Dictionary<string, LanguageData>();
         }
         Dict.Add(words[0], langData);
-       
+        
+
+
     }
 
     public void SetLanguage(Language languageToChange)

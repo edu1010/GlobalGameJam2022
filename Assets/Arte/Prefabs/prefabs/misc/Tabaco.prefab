@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5805918280904535462}
   - component: {fileID: 6484215100105787242}
   - component: {fileID: 4935713430804283738}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tabaco01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5646408041356359799}
   - component: {fileID: 1894332251682193100}
   - component: {fileID: 5513755015833794678}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cigarro009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 5940253678058455781}
   - component: {fileID: 4780283121859984727}
   - component: {fileID: 1671085282733734326}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cigarro007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 7039407501490463881}
   - component: {fileID: 6461162471452690957}
   - component: {fileID: 2003342384723979185}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TapaT01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,9 +333,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5666104231624090799}
-  m_Layer: 0
+  - component: {fileID: 2324828604970292521}
+  - component: {fileID: 3359147550392794030}
+  m_Layer: 10
   m_Name: Tabaco
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,6 +364,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &2324828604970292521
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681729619831052795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &3359147550392794030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681729619831052795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919ac4ff0a9dfed499405c0def1a751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3156267420048337900
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +401,7 @@ GameObject:
   - component: {fileID: 9009047967533048135}
   - component: {fileID: 7806102852582416446}
   - component: {fileID: 1831837422704885664}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cigarro01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +482,7 @@ GameObject:
   - component: {fileID: 3174008137628525527}
   - component: {fileID: 3843980626599805198}
   - component: {fileID: 1704513192891262184}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cigarro011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +563,7 @@ GameObject:
   - component: {fileID: 4637096785882111968}
   - component: {fileID: 8040341081569816388}
   - component: {fileID: 471538017237772530}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cigarro008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +644,7 @@ GameObject:
   - component: {fileID: 2494144355847439258}
   - component: {fileID: 764676421382687631}
   - component: {fileID: 3195096807230970651}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cigarro010
   m_TagString: Untagged
   m_Icon: {fileID: 0}

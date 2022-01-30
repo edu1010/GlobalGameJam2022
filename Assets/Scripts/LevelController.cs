@@ -16,7 +16,6 @@ public class LevelController : MonoBehaviour
         if (m_LevelLoader == null)
         {
             m_LevelLoader = this;
-            GameObject.DontDestroyOnLoad(gameObject);
         }
         else
         {
