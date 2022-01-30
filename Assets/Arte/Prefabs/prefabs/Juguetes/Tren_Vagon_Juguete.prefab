@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 3911502442054519805}
   - component: {fileID: 3698479750120714040}
   - component: {fileID: 361409687153901187}
-  m_Layer: 0
+  - component: {fileID: 5883145888097185017}
+  - component: {fileID: 8986345508654599381}
+  m_Layer: 10
   m_Name: Tren_Vagon_Juguete
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +84,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5883145888097185017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538448698646911287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6016289140682571397, guid: 2ce1343e195a08c46b317dfb3ac864d6, type: 3}
+--- !u!114 &8986345508654599381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538448698646911287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919ac4ff0a9dfed499405c0def1a751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7500426320230139586
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +121,7 @@ GameObject:
   - component: {fileID: 3454530808818869436}
   - component: {fileID: 5214772708664576641}
   - component: {fileID: 1282984993110190578}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Vagon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
