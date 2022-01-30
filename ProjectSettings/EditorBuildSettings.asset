@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StoryScenes/Kid/CalleOCasa2.unity
     guid: 62e1e6eb519e70446849484b95df6d80
   - enabled: 1
-    path: Assets/Scenes/StoryScenes/Teenager/QuienTeGusta 1.unity
+    path: Assets/Scenes/StoryScenes/Teenager/QuienTeGusta.unity
     guid: c67ccfa4d8dfa8c41ba0b0fcab0e09af
   - enabled: 1
     path: Assets/Scenes/StoryScenes/University/Peli.unity
