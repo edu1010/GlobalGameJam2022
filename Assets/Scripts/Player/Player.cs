@@ -40,6 +40,13 @@ public class Player : MonoBehaviour
     [Header("Objects")]
     public LayerMask m_LayerMask;
     public float m_distance = 20;
+    public Transform ObjectPos;
+    bool m_WachingObject = false;
+    GameObject m_Object = null;
+    float m_YawObject;
+    float m_PitchObject;
+    float m_timerOb = 0f;
+    float m_TimerSoltar = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -52,10 +59,26 @@ public class Player : MonoBehaviour
     {
         if (!m_Pause)
         {
-            CameraMovement();
-            Movement();
-            InteractObject();
-            CheckObjects();
+            if (!m_WachingObject)
+            {
+                CameraMovement();
+                Movement();
+                InteractObject();
+                if (!(m_TimerSoltar > 0)) 
+                {
+                    CheckObjects();
+                }
+                else
+                {
+                    m_TimerSoltar -= Time.deltaTime;
+                }
+                
+            }
+            else
+            {
+                UpdateObject();
+            }
+            
         }
        // _pressed = false;
     }
@@ -151,6 +174,42 @@ public class Player : MonoBehaviour
                 hit.transform.GetComponent<IterfaceInteractable>()?.Interact();
             }
         }
+    }
+    public void StartObservingObject(GameObject gameObject)
+    {
+        m_Object = Instantiate(gameObject, null);
+        
+        m_Object.transform.position = transform.TransformPoint(ObjectPos.transform.position);
+        m_Object.transform.position = (ObjectPos.transform.position);
+        m_WachingObject = true;
+        
+    }
+    public void UpdateObject()
+    {
+        //ROTACION CAMARA input
+        float l_MouseAxisY = Input.GetAxis("Mouse Y");
+        float l_MouseAxisX = Input.GetAxis("Mouse X");
+        //m_pitch es x en mru x = x0+v*t
+         m_PitchObject += l_MouseAxisY * m_PitchRotationalSpeed * Time.deltaTime * (m_InvertedPitch ? -1.0f : 1.0f);
+        m_PitchObject = Mathf.Clamp(m_PitchObject, m_MinPitch, m_MaxPitch);
+
+        m_YawObject += l_MouseAxisX * m_YawRotationalSpeed * Time.deltaTime * (m_InvertedYaw ? -1.0f : 1.0f);
+
+        m_Object.transform.rotation = Quaternion.Euler(m_PitchObject, m_YawObject, 0);
+        m_Object.transform.rotation = Quaternion.Euler(m_PitchObject, m_YawObject, m_Object.transform.localRotation.eulerAngles.z);
+
+        m_timerOb += Time.deltaTime;
+        if (m_timerOb > 1f)
+        {
+            if (Input.GetKey(m_InteractKey))
+            {
+                m_WachingObject = false;
+                Destroy(m_Object);
+                m_timerOb = 0;
+                m_TimerSoltar = 1f;
+            }
+        }
+        
     }
 }
 
