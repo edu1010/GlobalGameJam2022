@@ -354,11 +354,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2d7b17a0806a69e48aeab0888d563ed9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42111e5d4c69cf240a02e2fab68695eb, type: 3}
---- !u!4 &849872958 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3945916704965841102, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}
-  m_PrefabInstance: {fileID: 1418995756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &901509329
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,36 +627,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0407fcca1546bed4a892ece24509ab5d, type: 3}
---- !u!1 &1231268388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1231268389}
-  m_Layer: 0
-  m_Name: Trasnform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1231268389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231268388}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: -0.22, z: 1.86}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 849872958}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1418995756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -713,10 +678,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3945916706013491477, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}
-      propertyPath: ObjectPos
-      value: 
-      objectReference: {fileID: 1231268389}
     - target: {fileID: 3945916706013491478, guid: 224b5c71a1a980b4186d5cdb458f95d3, type: 3}
       propertyPath: m_Name
       value: Player
