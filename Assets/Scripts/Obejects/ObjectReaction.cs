@@ -17,11 +17,7 @@ public class ObjectReaction : MonoBehaviour, IterfaceInteractable
         m_originalColor = _mat.GetColor("_BaseColor");
     }
 
-    // Update is called once per frame
-    void LateUpdate()
-    {
-       
-    }
+    
     private void Update()
     {
         if(m_apeal)
@@ -61,7 +57,6 @@ public class ObjectReaction : MonoBehaviour, IterfaceInteractable
     }
     public void ChangeColor(Color color)
     {
-        Debug.Log("change color");
         Color nNew = Color.black;//do whatever you want here
         _mat.SetColor("_BaseColor", color);
     }
