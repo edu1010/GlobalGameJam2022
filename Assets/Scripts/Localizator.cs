@@ -75,7 +75,6 @@ public class Localizator : MonoBehaviour
         {
             Dict = new Dictionary<string, LanguageData>();
         }
-        Debug.Log(words[0]+" "+langData);
         Dict.Add(words[0], langData);
         
 
