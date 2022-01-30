@@ -10,7 +10,7 @@ public class MenusController : MonoBehaviour
     CanvasGroup m_CanvasPlay;
     CanvasGroup m_CanvasPause;
     CanvasGroup m_CanvasHud;
-    
+
     static MenusController m_MenusController = null;
     private void Awake()
     {
@@ -40,10 +40,11 @@ public class MenusController : MonoBehaviour
         HideMenu(m_CanvasHud);
     }  public void ShowCanvasHud()
     {
-        GameController.GetGameController().ResumeGame();
-        ShowMenu(m_CanvasHud);
-        HideMenu(m_CanvasPause);
-        HideMenu(m_CanvasPlay);
+            ShowMenu(m_CanvasHud);
+            HideMenu(m_CanvasPause);
+            HideMenu(m_CanvasPlay);
+
+        
     }
     public void ShowCanvasPause()
     {

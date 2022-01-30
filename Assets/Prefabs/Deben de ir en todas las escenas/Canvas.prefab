@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 5384520729622488225}
   - component: {fileID: 7264671571306326905}
   - component: {fileID: 7413337755978797624}
+  - component: {fileID: 557821871}
   m_Layer: 5
   m_Name: PlatButton
   m_TagString: Untagged
@@ -663,19 +664,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7264671571306326905}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5940633814649795426}
-        m_TargetAssemblyTypeName: MenusController, Assembly-CSharp
-        m_MethodName: ShowCanvasHud
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &557821871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672072462480165196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81591e18fb1bfa3469dcd944a524ea5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5940633813672374095
 GameObject:
   m_ObjectHideFlags: 0

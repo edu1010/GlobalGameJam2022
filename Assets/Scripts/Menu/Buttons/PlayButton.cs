@@ -6,6 +6,7 @@ public class PlayButton : MonoBehaviour, IPointerClickHandler
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        
+        GameController.GetGameController().ResumeGame();
     }
 }
