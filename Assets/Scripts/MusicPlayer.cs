@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MusicPlayer : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class MusicPlayer : MonoBehaviour
     {
         m_audioSurce.Play();
 
-        MusicVolume = PLayerPrefs.GetFloat("volume");
-        AudioSource.volume = MusicVolume;
+        MusicVolume = PlayerPrefs.GetFloat("volume");
+        m_audioSurce.volume = MusicVolume;
     }
 
     // Start is called before the first frame update
@@ -27,7 +28,6 @@ public class MusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AudioSource.volume = MusicVolume;
-        PlayerPrefs.SetFloat("volume", MusicVolume);
+
     }
 }
