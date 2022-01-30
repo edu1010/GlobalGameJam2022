@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 1565187164}
   - component: {fileID: 1565187166}
   - component: {fileID: 1565187165}
+  - component: {fileID: 7278120068354822099}
   m_Layer: 5
   m_Name: Mood
   m_TagString: Untagged
@@ -301,6 +302,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7278120068354822099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565187163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80dd5053c952c54ab459551557f5713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Happy: {fileID: 1229794671371557974, guid: 52320b580047adf4e86e9c331598d361, type: 3}
+  Normal: {fileID: -7217833683216916554, guid: 52320b580047adf4e86e9c331598d361, type: 3}
+  sad: {fileID: -8712741707094424151, guid: 52320b580047adf4e86e9c331598d361, type: 3}
 --- !u!1 &2123849997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5940633813672374093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4707,7 +4723,7 @@ MonoBehaviour:
   m_MenuPlay: {fileID: 5940633814204071935}
   m_MenuPause: {fileID: 5940633814880660148}
   m_Hud: {fileID: 5940633814850974806}
-  mood: {fileID: 0}
+  mood: {fileID: 7278120068354822099}
   GameObjectText: {fileID: 2123849997}
 --- !u!1 &5940633814678531392
 GameObject:
@@ -5486,7 +5502,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 0
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &5940633814880660149
 MonoBehaviour:
@@ -6104,7 +6120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_transition: {fileID: 5940633813672374092}
-  m_transitionTime: 1
+  m_transitionTime: 2
 --- !u!1 &5940633815283254829
 GameObject:
   m_ObjectHideFlags: 0
