@@ -8,7 +8,7 @@ public class SoundController : MonoBehaviour
 {
     AudioSource m_audioSurce;
     
-    public List<AudioClip> songs;
+    //public List<AudioClip> songs;
     public static SoundController m_soundController = null;
     public Sounds[] sounds;
 
