@@ -51,7 +51,7 @@ public class TextEffects : MonoBehaviour
 
     Vector2 Move(float time)
     {
-        return new Vector2(Mathf.Sin(time * 3.3f), Mathf.Cos(time * 0.9f));
+        return new Vector2(Mathf.Sin(time * 2.3f), Mathf.Cos(time * 0.9f));
     }
 
     Vector3 Wobble(float time)

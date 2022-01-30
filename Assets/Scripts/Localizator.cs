@@ -7,6 +7,7 @@ public enum Language
 {
     Spanish = 0,
     English,
+    Russian,
 }
 
 
