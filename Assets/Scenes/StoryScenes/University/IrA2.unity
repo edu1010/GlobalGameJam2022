@@ -14162,6 +14162,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2426015615050297668, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
+      propertyPath: m_Event
+      value: 
+      objectReference: {fileID: 11400000, guid: d3746fb8a3c53e1489a371b286e4d8ee, type: 2}
+    - target: {fileID: 8859403402668469985, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
+      propertyPath: m_Event
+      value: 
+      objectReference: {fileID: 11400000, guid: 741d65165a5c410478f42c68468f48ac, type: 2}
     - target: {fileID: 9192370122309161099, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
       propertyPath: m_RootOrder
       value: 50
