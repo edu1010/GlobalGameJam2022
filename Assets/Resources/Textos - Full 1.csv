@@ -2,7 +2,7 @@
 masterSlider,Volumen,Volume,Общая громкость
 musicSlider,Volumen musica,Music volume ,Музыка
 sfxSlider,Volumen sfx,Sfx volume,Эффекты
-sala1Regalo,Haz click para abrir el regalo.,Click to open the gift.,"Нажмите, чтобы открыть подарок."
+sala1Regalo,Haz click para abrir el regalo.,Click to open the gift.,"Нажмите, чтобы открыть подарок"
 ObjetosNuevoPregunta,¿Compartes el juguete con tu hermano?,Do you share the toy with your brother?,Ты поделишься игрушкой с твоим братом?
 ObjetosNuevoRespuesta1,Si,Yes,Да 
 ObjetosNuevoRespuesta2,No,No,Нет
@@ -21,7 +21,7 @@ QuienTeGustaRespuesta2,Tus  amigos,Your friends,Друзья
 HermanoOAmigosPregunta,¿Invitar a tu hermano a pasear con tus amigos?,Invite your brother to walk with your friends?,Пригласить брата погулять с друзьями?
 HermanoOAmigosRespuesta1,Si,Yes,Да
 HermanoOAmigosRespuesta2,No,No,Нет
-DeclarartePregunta,¿Confesar tu amor a la chica que te gusta?,Confess your love to the girl you like?,"Признаться в любви к девушке, которая вам нравится?"
+DeclarartePregunta,¿Confesar tu amor a la persona que te gusta?,Confess your love to the person you like?,"Признаться в любви к человеку, который вам нравится?"
 DeclararteRespuesta1,Si,Yes,Да
 DeclararteRespuesta2,No,No,Нет
 LlamadaPregunta,¿Contestar llamada?,Answer call?,Ответить на звонок?
@@ -29,51 +29,51 @@ LlamadaRespuesta1,Si,Yes,Да
 LlamadaRespuesta2,No,No,Нет
 JugarPregunta,¿Salir a pasear con tus amigos o jugar videojuegos?,Going out for a walk with your friends or play video games?,Выйти погулять с друзьями или играть в видеоигры?
 JugarRespuesta1,Amigos,Friends,Друзья
-JugarRespuesta2,Videojuegos,Video game,Видео игры.
+JugarRespuesta2,Videojuegos,Video game,Видео игры
 ComprarPregunta,¿Comprar regalo de cumpleaños a tu madre o comprarte algo para ti?,Buy Birthday Gift to your mother or buy something for you?,Купить подарок на день рождения маме или купить что-нибудь для себя?
-ComprarRespuesta1,Regalo  a  madre,Gift to Mother.,Подарок маме.
+ComprarRespuesta1,Regalo  a  madre,Gift to Mother,Подарок маме
 ComprarRespuesta2,Algo  para  ti,Something for you,Что-то для себя
 EstudiarOQuedarPregunta,¿Ir a estudiar o quedar con tus amigos?,Going to study or stay with your friends?,Пойти учиться или остаться с друзьями?
 EstudiarOQuedarRespuesta1,Estudiar,To study,Учиться.
 EstudiarOQuedarRespuesta2,Amigos,Friends,Друзья
 ParejaHermanoTeTiraCañaPregunta,La pareja de tu hermano quiere ponerle los cuernos contigo:,Your brother's partner wants to cheat on your brother with you:,Партнер твоего брата хочет изменить брату с тобой:
 ParejaHermanoTeTiraCañaRespuesta1,Aceptar,Accept,Согласиться
-ParejaHermanoTeTiraCañaRespuesta2,Decirle  a  tu  hermano,Tell your brother,Рассказать брату.
+ParejaHermanoTeTiraCañaRespuesta2,Decirle  a  tu  hermano,Tell your brother,Рассказать брату
 HablarPadresPregunta,¿Hablarle a tus padres sobre videojuegos o la escuela?,Talk to your parents about videogames or school?,Поговорите со своими родителями о видеоиграх или о школе?
-HablarPadresRespuesta1,Videojuegos,Videogames,Видеоигры.
+HablarPadresRespuesta1,Videojuegos,Videogames,Видеоигры
 HablarPadresRespuesta2,Escuela,School,Школа.
 GuardarTabacoPregunta,¿Guardar paquete de tabaco en el armario o dejarlo en tu mochila?,Save tobacco package in the closet or leave it in your backpack?,Спрятать сигареты в шкафу или оставить в рюкзаке?
-GuardarTabacoRespuesta1,Armario,Closet,Шкаф.
-GuardarTabacoRespuesta2,Mochila,Bag,Рюкзак.
+GuardarTabacoRespuesta1,Armario,Closet,Шкаф
+GuardarTabacoRespuesta2,Mochila,Bag,Рюкзак
 DineroPregunta,¿Pedir dinero a tus padre o robarselo?,Ask your father money or steal it?,Попросить денег у родителей или украсть?
-DineroRespuesta1,Pedir,Ask,Попросить.
+DineroRespuesta1,Pedir,Ask,Попросить
 DineroRespuesta2,Robar,Steal,Украсть
 HablarPadres2Pregunta,¿Hablarle a tus padres sobre tus amigos o la escuela?,Talk to your parents about your friends or school?,Поговорить с родителями о своих друзьях или о школе?
 HablarPadres2Respuesta1,Amigos,Friends,Друзья
-HablarPadres2Respuesta2,Escuela,School,Школа.
+HablarPadres2Respuesta2,Escuela,School,Школа
 EstudiarOtrabajarPregunta,¿Estudiar o trabajar?,Study or work?,Учиться или работать?
-EstudiarOtrabajarRespuesta1,Estudiar,To study,Учиться.
-EstudiarOtrabajarRespuesta2,Trabajar,To work,Работать.
+EstudiarOtrabajarRespuesta1,Estudiar,To study,Учиться
+EstudiarOtrabajarRespuesta2,Trabajar,To work,Работать
 EstudiarPregunta,¿Estudiar lo que tu quieres o lo que dicen tus padres?,Study what you want or what your parents tell you to?,"Поступить туда, куда хочешь или куда говорят родители?"
-EstudiarRespuesta1,Lo  que  quiero,What I want,Куда я хочу.
+EstudiarRespuesta1,Lo  que  quiero,What I want,Куда я хочу
 EstudiarRespuesta2,Lo  que  quieren  mis  padre,What my father wants,Куда говорят родители
 ComidaElaboradaPregunta,¿Cocinar comida elaborada o precocinada?,Cooking your own food or use precooked food?,Приготовить еду самому или разогреть готовое?
 ComidaElaboradaRespuesta1,Elaborada,Elaborate,Приготовить самому
-ComidaElaboradaRespuesta2,Precocinada,Precomed.,Разогреть готовое.
+ComidaElaboradaRespuesta2,Precocinada,Precomed.,Разогреть готовое
 PeliPregunta,¿Ver la película que tu quieres o la que quiere tu pareja?,See the movie that you want or the one your partner wants?,"Посмотреть фильм, который ты хочешь или который хочет твоя пара?"
 PeliRespuesta1,La  que  quiero,The one I want,"Тот, который я хочу"
 PeliRespuesta2,La  que  quiere  mi  novia,The one who wants my girlfriend,"Тот, кто хочет мой партнер"
 IrA,¿Ir al trabajo/estudiar o jugar con tus amigos (online)? ,Go to work / study or play with your friends (online)?,Пойти на работу / учиться или играть со своими друзьями (онлайн)?
-IrARespuesta1,Trabajar/Estudiar,Work/study,Работа/учеба.
+IrARespuesta1,Trabajar/Estudiar,Work/study,Работа/учеба
 IrARespuesta2,Amigos,Friends,Друзья
 IrA2Pregunta,¿Ir a estudiar/trabajar o quedar con tus amigos?,Going to study / work or stay with your friends?,Пойти на работу / учиться или остаться со своими друзьями?
-IrA2Respuesta1,Trabajar/Estudiar,Work study,Работа/учеба.
+IrA2Respuesta1,Trabajar/Estudiar,Work study,Работа/учеба
 IrA2Respuesta2,Amigos,Friends,Друзья
 NoviaOAmigoPregunta,¿Salir con tu pareja a cenar o ayudar un amigo a estudiar?,Go out with your partner to dinner or help a friend to study?,Пойти на ужин со своей парой или помочь другу учиться?
-NoviaOAmigoRespuesta1,Novia,Girlfriend,Ужин.
+NoviaOAmigoRespuesta1,Novia,Girlfriend,Ужин
 NoviaOAmigoRespuesta2,Amigo,Friend,Друг
 ContestarLlamadaPregunta,¿Contestar la llamada o seguir estudiando para los exámenes finales?,Answer the call or continue studying for the final exams?,Ответить на звонок или продолжить учиться для финальных экзаменов?
-ContestarLlamadaRespuesta1,Contestar,To answer,Ответить.
+ContestarLlamadaRespuesta1,Contestar,To answer,Ответить
 ContestarLlamadaRespuesta2,Seguir estudiando,Keep studying,Продолжить учиться
 RobarAlsuperPregunta,¿Robar al super con tus amigos?,Rob the supermarket with your friends?,Обокрасть магазин со своими друзьями?
 RobarAlsuperRespuesta1,Si,Yes,Да
@@ -83,19 +83,19 @@ Comprar2Respuesta1,Si,Yes,Да
 Comprar2Respuesta2,No,No,Нет
 JugarConPregunta,¿Jugar con tus amigos (online) o con la persona que acabas de conocer por internet?,Play with your friends (online) or with the person you just met in the Internet?,"Играть с друзьями (онлайн) или с человеком, с которым вы только что познакомились в Интернету?"
 JugarConRespuesta1,Amigos,Friends,Друзья
-JugarConRespuesta2,Chica,Girl,Человек.
+JugarConRespuesta2,Chica,Girl,Человек
 QuedadaTrabajoPregunta,¿Ir a la quedada con los compañeros de trabajo o volver a casa?,Go to the stay with co-workers or go home?,Пойти на встречу с коллегами или отправиться домой?
-QuedadaTrabajoRespuesta1,Ir,Go,Встреча.
-QuedadaTrabajoRespuesta2,Volver  a  casa,Back home,Пойти домой.
+QuedadaTrabajoRespuesta1,Ir,Go,Встреча
+QuedadaTrabajoRespuesta2,Volver  a  casa,Back home,Пойти домой
 Dinero2Pregunta,¿Comprar lootbox del Kenchin Impact?,Buy Lootbox of the Impact Kenchin?,Купить лоокбокс воздействия kenchin?
 Dinero2Respuesta1,Si,Yes,И это
 Dinero2Respuesta2,No,No,Нет
 PedirDineroPregunta,¿Pedir dinero a tus padres o ocultar tus deduas?,Ask your parents for money or hide your debts?,Попросить денег у  своих родителей или скрыть долги?
-PedirDineroRespuesta1,Pedir,Ask,Попросить.
+PedirDineroRespuesta1,Pedir,Ask,Попросить
 PedirDineroRespuesta2,Ocultar,Hide,Скрыть
 IrA3Pregunta,¿Ir de pesca con un amigo o ver la serie Alkane?,Go fishing with a friend or see the Akane series?,Пойти на рыбалку с другом посмотреть сериал Akane?
 IrA3Respuesta1,Pesca,Fishing,Рыбалка
-IrA3Respuesta2,Alkane,Alkane.,Сериал
+IrA3Respuesta2,Alkane,Alkane,Сериал
 HacerFavorPregunta,¿Hacerle un favor al traficante de tu grupo de amigos?,Do your group of friends traffic train?,Сделайте вашу группу друзей на трафике?
 HacerFavorRespuesta1,Si,Yes,И это
 HacerFavorRespuesta2,No,No,Нет
@@ -118,11 +118,11 @@ CelebrarCumpleParejaPregunta,¿Celebrar el cumpleaños de pareja o ir a la reuni
 CelebrarCumpleParejaRespuesta1,Cumpleaños,Birthday,День рождения
 CelebrarCumpleParejaRespuesta2,Reunión,Meeting,Встреча
 IrATrabajarPregunta,¿Ir a trabajar en coche o metro?,Going to work by car or subway?,Поехать на работу на машине или на метро?
-IrATrabajarRespuesta1,Coche,Car,Машина.
+IrATrabajarRespuesta1,Coche,Car,Машина
 IrATrabajarRespuesta2,Metro,Meter,Метро
 VacacionesPregunta,¿Ir de vacaciones en crucero o a visitar un país?,Go on vacation on cruise or visit a country?,Поехать в отпуск в круиз или посетить другую страну?
-VacacionesRespuesta1,Crucero,Cruise,Круиз.
-VacacionesRespuesta2,Visitar  país,Visit a country,Посетить страну.
+VacacionesRespuesta1,Crucero,Cruise,Круиз
+VacacionesRespuesta2,Visitar  país,Visit a country,Посетить страну
 CambiarCasaPregunta,¿Cambiar de casa?,Change of house?,Поменять дом?
 CambiarCasaRespuesta1,Si,Yes,Да
 CambiarCasaRespuesta2,No,No,Нет
