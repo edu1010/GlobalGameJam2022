@@ -286,7 +286,9 @@ public class LevelsData : MonoBehaviour
             case ((int)SceneNames.PedirDinero):
                 CalculateAdult();
                 break;
-
+            default:
+                CalculateAdult();
+                break;
         }
 
     }
@@ -337,17 +339,34 @@ public class LevelsData : MonoBehaviour
                 }
                 else
                 {
-                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Creditos);
+                    creditos();
                 }
                 break;
         case ((int)SceneNames.TrabajarMas):
-                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Creditos);
+                creditos();
                 break;
         
         }
 
      }
+    public void creditos()
+    {
+        if (happines > 3)
+        {
+            LevelController.GetLoadLevel().LoadCreditos((int)SceneNames.Creditos, "muerteFeliz");
+        }
+        else if (happines > 0)
+        {
+            LevelController.GetLoadLevel().LoadCreditos((int)SceneNames.Creditos, "muerteTriste");
+        }
+        else
+        {
+            LevelController.GetLoadLevel().LoadCreditos((int)SceneNames.Creditos, "muerteNormal");
+        }
+        
+    }
 }
+
 public enum DecisionsVars
 {
     otaku ,

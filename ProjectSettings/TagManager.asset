@@ -6,6 +6,7 @@ TagManager:
   tags:
   - object
   - ancore
+  - Creditos
   layers:
   - Default
   - TransparentFX

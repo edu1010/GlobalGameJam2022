@@ -37,6 +37,9 @@ public class LevelController : MonoBehaviour
     public void LoadNextLevel(int nextLevel)
     {
         StartCoroutine(LoadLevel(nextLevel));
+    } public void LoadCreditos(int nextLevel,string key)
+    {
+        StartCoroutine(LoadLevel(nextLevel,key));
     }
     public void LoadNextLevel(string nextLevel)
     {
@@ -55,6 +58,20 @@ public class LevelController : MonoBehaviour
             m_transition.SetTrigger("End");
             
             GameController.GetGameController().ResumeGame();
+        };
+    }
+     IEnumerator LoadLevel(int levelIndex,string key)
+    {
+
+        m_transition.SetTrigger("Start");
+        yield return new WaitForSeconds(m_transitionTime);
+        AsyncOperation LoadLevel = SceneManager.LoadSceneAsync(levelIndex);
+        LoadLevel.completed += (asyncOperation) =>
+        {
+            m_transition.SetTrigger("End");
+            
+            GameController.GetGameController().ResumeGame();
+            GameObject.FindGameObjectWithTag("Creditos").GetComponent<LocalizatedText>().Key = key;
         };
     }
 
