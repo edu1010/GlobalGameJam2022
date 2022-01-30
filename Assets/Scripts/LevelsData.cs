@@ -61,6 +61,18 @@ public class LevelsData : MonoBehaviour
                 happines += quantity;
                 break;
         }
+        if (happines > 3)
+        {
+            MenusController.GetMenuController().mood.ChangeModToHappy();
+        }
+        else if (happines > 0)
+        {
+            MenusController.GetMenuController().mood.ChangeModToNormal();
+        }
+        else
+        {
+            MenusController.GetMenuController().mood.ChangeModToSad();
+        }
     }
     static public LevelsData GetLevelsData()
     {
@@ -275,23 +287,15 @@ public class LevelsData : MonoBehaviour
         switch (currentSceneIndex)
         {
             case ((int)SceneNames.PedirDinero):
-                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA3);
-                break;
-            case ((int)SceneNames.IrA3):
-                if(friends>=5)
-                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.HacerFavor);
-                else
-                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.InvertirCripto);
+                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.HacerFavor);
                 break;
             case ((int)SceneNames.HacerFavor):
-                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.InvertirCripto);
-                break;
-            case ((int)SceneNames.InvertirCripto):
-                if(partner)
+                if (partner)
                     LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.QuedarAmiga);
                 else
                     LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA4);
                 break;
+            
             case ((int)SceneNames.QuedarAmiga):
                 LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrA4);
                 break;
@@ -313,12 +317,9 @@ public class LevelsData : MonoBehaviour
                 if(partner)
                         LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.CelebrarCumplePareja);
                 else
-                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrATrabajar);
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Vacaciones);
                 break;
             case ((int)SceneNames.CelebrarCumplePareja):
-                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.IrATrabajar);
-                break;
-            case ((int)SceneNames.IrATrabajar):
                 LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Vacaciones);
                 break;
             case ((int)SceneNames.Vacaciones):
@@ -328,14 +329,11 @@ public class LevelsData : MonoBehaviour
                 }
                 else
                 {
-                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.CambiarCasa);
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Creditos);
                 }
                 break;
         case ((int)SceneNames.TrabajarMas):
                 LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.TrabajarMas);
-                break;
-        case ((int)SceneNames.CambiarCasa):
-                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Creditos);
                 break;
         
         }
@@ -393,17 +391,13 @@ public enum SceneNames
     QuedadaTrabajo,
     Dinero2,
     PedirDinero,
-    IrA3,
     HacerFavor,
-    InvertirCripto,
     QuedarAmiga,
     IrA4,
     TenerHijos,
-    TrabjarTraficante,//Opcional
+    TrabjarTraficante,
     CelebrarCumplePareja,
-    IrATrabajar,
     Vacaciones,
-    CambiarCasa,
     TrabajarMas,
     Creditos
 
