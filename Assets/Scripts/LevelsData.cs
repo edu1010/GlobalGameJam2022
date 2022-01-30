@@ -333,7 +333,7 @@ public class LevelsData : MonoBehaviour
                 }
                 break;
         case ((int)SceneNames.TrabajarMas):
-                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.TrabajarMas);
+                LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Creditos);
                 break;
         
         }
