@@ -350,7 +350,8 @@ public enum DecisionsVars
     partner,
     happines,
     work,
-    armario
+    armario,
+    trafincante
 }
 public enum etapas
 {
