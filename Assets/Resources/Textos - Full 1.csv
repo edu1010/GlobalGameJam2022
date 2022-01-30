@@ -129,10 +129,11 @@ CambiarCasaRespuesta2,No,No,Нет
 TrabajarMasPregunta,¿Trabajar más horas?,Work more?,Работать больше?
 TrabajarMasRespuesta1,Si,Yes,И это
 TrabajarMasRespuesta2,No,No,Нет
-muerteOtaku,"Fuiste demasiado individualista, esto te ha llevado a estar solo, sin dinero ni felicidad. Por conseqüencia has muerto.",,
-muerteHermano,No cogiste la llamada de tu hermano y por ello no pudiste ir a rescatarlo al accidente de tráfico. Ha muerto.,,
-muerteNoFamilia,"Tuviste un accidente de tráfico y como no habia nadie preocupado por ti, nadie te salvó. Has muerto.",,
-muerteTraficante,No debiste haberte relacionado tanto con el mundillo de la droga. En este punto tu única opción ha sido la muerte.,,
-muerteFeliz,"Has llegado a la vejez, enhorabuena! Encima has muerto feliz!",,
-muerteTriste,"Has llegado a la vejez, enhorabuena! Pero has muerto triste...",,
-muerteNormal,"Has llegado a la vejez, enhorabuena! Has muerto sin más, ni felicidad ni tristeza.",,
+muerteOtaku,"Fuiste demasiado individualista, esto te ha llevado a estar solo, sin dinero ni felicidad. Por conseqüencia has muerto.","You were too individualistic, this has led you to be alone, without money or happiness. By conseQuence you have died.","Вы были слишком индивидуалистичны, это привело к тому, чтобы ты был один, без денег или счастья. По последствию, вы умерли."
+muerteHermano,No cogiste la llamada de tu hermano y por ello no pudiste ir a rescatarlo al accidente de tráfico. Ha muerto.,You did not take the call of your brother and therefore you could not go to rescue it to the traffic accident. Has died.,"Вы не приняли звонок своего брата, и поэтому вы не могли пойти, чтобы спасти его к несчастному времени. Умер."
+muerteNoFamilia,"Tuviste un accidente de tráfico y como no habia nadie preocupado por ti, nadie te salvó. Has muerto.","You had a traffic accident and since there was no one worried about you, nobody saved you. You have died.","У вас была дорожная авария, и так как никто не беспокоился о тебе, никто не спас тебя. Вы умерли."
+muerteTraficante,No debiste haberte relacionado tanto con el mundillo de la droga. En este punto tu única opción ha sido la muerte.,You should not have linked you so much with the world of drugs. At this point your only option has been death.,Вы не должны так много связаны с миром наркотиков. В этот момент ваш единственный вариант был смертью.
+muerteFeliz,"Has llegado a la vejez, enhorabuena! Encima has muerto feliz!","You have arrived on old age, congratulations! Above you have died happy!","Вы прибыли на старость, поздравляю! Выше вы умер счастливы!"
+muerteTriste,"Has llegado a la vejez, enhorabuena! Pero has muerto triste...","You have arrived on old age, congratulations! But you have died sad ...","Вы прибыли на старость, поздравляю! Но вы умер грустно ..."
+muerteNormal,"Has llegado a la vejez, enhorabuena! Has muerto sin más, ni felicidad ni tristeza.","You have arrived on old age, congratulations! You have died without more, no happiness or sadness.","Вы прибыли на старость, поздравляю! Вы умерли без большего, не счастья или грусти."
+dejarObjeto,Presiona E para dejar de coger el objeto,Press E to stop taking the object,"Нажмите E, чтобы перестать принимать объект"

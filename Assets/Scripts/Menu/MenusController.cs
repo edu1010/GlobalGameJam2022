@@ -10,7 +10,8 @@ public class MenusController : MonoBehaviour
     CanvasGroup m_CanvasPlay;
     CanvasGroup m_CanvasPause;
     CanvasGroup m_CanvasHud;
-
+    public Mood mood;
+    public GameObject GameObjectText;
     static MenusController m_MenusController = null;
     private void Awake()
     {
@@ -68,5 +69,13 @@ public class MenusController : MonoBehaviour
     public static MenusController GetMenuController()
     {
         return m_MenusController;
+    }
+    public void ActivateText()
+    {
+        GameObjectText.SetActive(true);
+    }
+    public void DesactivateText()
+    {
+        GameObjectText.SetActive(false);
     }
 }

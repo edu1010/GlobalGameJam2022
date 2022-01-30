@@ -182,7 +182,9 @@ public class Player : MonoBehaviour
         m_Object.transform.position = transform.TransformPoint(ObjectPos.transform.position);
         m_Object.transform.position = (ObjectPos.transform.position);
         m_WachingObject = true;
-        
+        MenusController.GetMenuController().ActivateText();
+
+
     }
     public void UpdateObject()
     {
@@ -207,6 +209,7 @@ public class Player : MonoBehaviour
                 Destroy(m_Object);
                 m_timerOb = 0;
                 m_TimerSoltar = 1f;
+                MenusController.GetMenuController().DesactivateText();
             }
         }
         
