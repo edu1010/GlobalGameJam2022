@@ -1542,7 +1542,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &636192632
 PrefabInstance:
@@ -7458,7 +7458,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1401504141
 PrefabInstance:
@@ -7756,13 +7756,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7998850068227984577, guid: d61f3fe83f79ec14ca46e70ed1e80b74, type: 3}
+      propertyPath: m_FlareTint.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998850068227984577, guid: d61f3fe83f79ec14ca46e70ed1e80b74, type: 3}
+      propertyPath: m_FlareTint.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998850068227984577, guid: d61f3fe83f79ec14ca46e70ed1e80b74, type: 3}
+      propertyPath: m_FlareTint.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7998850068227984581, guid: d61f3fe83f79ec14ca46e70ed1e80b74, type: 3}
       propertyPath: m_Name
       value: Directional Light Sun
       objectReference: {fileID: 0}
     - target: {fileID: 7998850068227984582, guid: d61f3fe83f79ec14ca46e70ed1e80b74, type: 3}
       propertyPath: m_ColorTemperature
-      value: 5621
+      value: 20000
       objectReference: {fileID: 0}
     - target: {fileID: 7998850068227984583, guid: d61f3fe83f79ec14ca46e70ed1e80b74, type: 3}
       propertyPath: m_RootOrder
@@ -12669,7 +12681,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1765887474
 PrefabInstance:
