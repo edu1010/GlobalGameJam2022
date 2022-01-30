@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9708d01d77a06408b493378bede9e0, type: 3}
   m_Name: IrA4Bolos
   m_EditorClassIdentifier: 
-  m_CurrentEtapa: 2
+  m_CurrentEtapa: 3
   m_VarToChange: 4
   m_Quantity: 1
   m_VarToChange2: 2
