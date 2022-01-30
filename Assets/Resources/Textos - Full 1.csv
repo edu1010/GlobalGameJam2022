@@ -1,9 +1,7 @@
-key,Spanish,English,Русский
+﻿key,Spanish,English,Русский
 masterSlider,Volumen,Volume,Общая громкость
 musicSlider,Volumen musica,Music volume ,Музыка
 sfxSlider,Volumen sfx,Sfx volume,Эффекты
-,prueba,proof,Доказательство.
-,hola,hello,Привет
 sala1Regalo,Haz click para abrir el regalo.,Click to open the gift.,"Нажмите, чтобы открыть подарок."
 sala1Pregunta,¿Compartes el juguete con tu hermano?,Do you share the toy with your brother?,Вы разделяете игрушку с твоим братом?
 sala1Respuesta1,Si,Yes,И это
@@ -131,3 +129,10 @@ sala11Respuesta2,No,No,Нет
 sala12Pregunta,¿Trabajar más horas?,Work more?,Работать больше?
 sala12Respuesta1,Si,Yes,И это
 sala12Respuesta2,No,No,Нет
+muerteOtaku,"Fuiste demasiado individualista, esto te ha llevado a estar solo, sin dinero ni felicidad. Por conseqüencia has muerto.",,
+muerteHermano,No cogiste la llamada de tu hermano y por ello no pudiste ir a rescatarlo al accidente de tráfico. Ha muerto.,,
+muerteNoFamilia,"Tuviste un accidente de tráfico y como no habia nadie preocupado por ti, nadie te salvó. Has muerto.",,
+muerteTraficante,No debiste haberte relacionado tanto con el mundillo de la droga. En este punto tu única opción ha sido la muerte.,,
+muerteFeliz,"Has llegado a la vejez, enhorabuena! Encima has muerto feliz!",,
+muerteTriste,"Has llegado a la vejez, enhorabuena! Pero has muerto triste...",,
+muerteNormal,"Has llegado a la vejez, enhorabuena! Has muerto sin más, ni felicidad ni tristeza.",,
