@@ -78,4 +78,8 @@ public class MenusController : MonoBehaviour
     {
         GameObjectText.SetActive(false);
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

@@ -63,7 +63,7 @@ ComidaElaboradaRespuesta2,Precocinada,Precomed.,Разогреть готово�
 PeliPregunta,¿Ver la película que tu quieres o la que quiere tu pareja?,See the movie that you want or the one your partner wants?,"Посмотреть фильм, который ты хочешь или который хочет твоя пара?"
 PeliRespuesta1,La  que  quiero,The one I want,"Тот, который я хочу"
 PeliRespuesta2,La  que  quiere  mi  novia,The one who wants my girlfriend,"Тот, кто хочет мой партнер"
-IrA,¿Ir al trabajo/estudiar o jugar con tus amigos (online)? ,Go to work / study or play with your friends (online)?,Пойти на работу / учиться или играть со своими друзьями (онлайн)?
+IrAPregunta,¿Ir al trabajo/estudiar o jugar con tus amigos (online)? ,Go to work / study or play with your friends (online)?,Пойти на работу / учиться или играть со своими друзьями (онлайн)?
 IrARespuesta1,Trabajar/Estudiar,Work/study,Работа/учеба
 IrARespuesta2,Amigos,Friends,Друзья
 IrA2Pregunta,¿Ir a estudiar/trabajar o quedar con tus amigos?,Going to study / work or stay with your friends?,Пойти на работу / учиться или остаться со своими друзьями?
@@ -137,3 +137,4 @@ muerteFeliz,"Has llegado a la vejez, enhorabuena! Encima has muerto feliz ;)","Y
 muerteTriste,"Has llegado a la vejez, enhorabuena! Pero has muerto triste...","You got old, congratulations! But you died sad...","Поздравляем, ты состарился! Но из-за решений, принятых в течение жизни, ты умер несчастым."
 muerteNormal,"Has llegado a la vejez, enhorabuena! Has muerto sin más, ni felicidad ni tristeza.","You got old, congratulations! You simply died, without happiness or sadness.","Поздравляем, ты состарился! А потом просто умер. Ни грустный, ни счастливый, как картошка. Не знаю, почему картошка."
 Tutorial,"Pulsa E para interactuar con los objetos","Press E to interact with the objects","Нажмите E, чтобы взаимодействовать с объектами"
+dejarObjeto,"Pulsa E para soltar el objeto","press E to drop the object",Нажмите Е чтобы положить объект
