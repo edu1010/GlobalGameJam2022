@@ -21,7 +21,7 @@ public class MenusController : MonoBehaviour
         }
         else
         {
-            GameObject.Destroy(this); // ya existe, no hace falta crearla
+            GameObject.Destroy(gameObject); // ya existe, no hace falta crearla
         }
         
     }
