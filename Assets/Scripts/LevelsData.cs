@@ -218,6 +218,14 @@ public class LevelsData : MonoBehaviour
             case ((int)SceneNames.NoviaOAmigo):
                 LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Llamada);
                 break;
+
+            case ((int)SceneNames.IrA2):
+                 if (partner)
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.NoviaOAmigo);
+                else
+                    LevelController.GetLoadLevel().LoadNextLevel((int)SceneNames.Llamada);
+                break;
+
             case ((int)SceneNames.Llamada):
                 if (friends >= 3)
                 {
