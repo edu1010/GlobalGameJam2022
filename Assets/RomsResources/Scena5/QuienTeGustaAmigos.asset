@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9708d01d77a06408b493378bede9e0, type: 3}
   m_Name: QuienTeGustaAmigos
   m_EditorClassIdentifier: 
-  m_CurrentEtapa: 0
+  m_CurrentEtapa: 1
   m_VarToChange: 2
   m_Quantity: 1
+  m_VarToChange2: 0
+  m_VarToChange3: 0
+  m_Quantity2: 0
+  m_Quantity3: 0
