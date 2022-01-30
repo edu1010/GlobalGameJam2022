@@ -6,7 +6,8 @@ using TMPro;
 public class TextEffects : MonoBehaviour
 {
     public TMP_Text text;
-
+    public bool buble=false;
+    public float multiplayer = 2.3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,16 +30,23 @@ public class TextEffects : MonoBehaviour
 
             var vertexs = textInfo.meshInfo[charInfo.materialReferenceIndex].vertices;
             int idx = charInfo.vertexIndex;
+            if (buble)
+            {
+                //vertexs[charInfo.vertexIndex + j] = ;
+                Vector3 change = Wobble(Time.time + i);
+                vertexs[idx] += change;
+            }
+            else
+            {
+                Vector3 offset = Move(Time.time + i);
+                vertexs[idx] += offset;
+                vertexs[idx + 1] += offset;
+                vertexs[idx + 2] += offset;
+                vertexs[idx + 3] += offset;
+            }
 
-            //vertexs[charInfo.vertexIndex + j] = ;
-            /*Vector3 change = Wobble(Time.time + i);
-            vertexs[idx] += change;*/
 
-            Vector3 offset = Move(Time.time + i);
-            vertexs[idx] += offset;
-            vertexs[idx + 1] += offset;
-            vertexs[idx + 2] += offset;
-            vertexs[idx + 3] += offset;
+            
         }
 
         for (int k = 0; k < textInfo.meshInfo.Length; ++k)
@@ -51,7 +59,7 @@ public class TextEffects : MonoBehaviour
 
     Vector2 Move(float time)
     {
-        return new Vector2(Mathf.Sin(time * 2.3f), Mathf.Cos(time * 0.9f));
+        return new Vector2(Mathf.Sin(time * multiplayer), Mathf.Cos(time * 0.9f));
     }
 
     Vector3 Wobble(float time)

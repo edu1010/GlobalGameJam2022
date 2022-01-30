@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManagerEventRoom : MonoBehaviour
 {
-    EventNextRoomScriptableObject m_Event;
+    public EventNextRoomScriptableObject m_Event;
     public void TakeDecision()
     {
         LevelsData.GetLevelsData().IncrementVariable(m_Event.m_VarToChange.ToString(), m_Event.m_Quantity);

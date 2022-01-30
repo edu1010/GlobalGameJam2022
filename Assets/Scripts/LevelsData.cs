@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class LevelsData : MonoBehaviour
 {
     int otaku = 0;
@@ -46,6 +47,15 @@ public class LevelsData : MonoBehaviour
                 break;
             case ("partner"):
                 partner = 1==quantity;
+                break;
+            case ("work"):
+                work = 1==quantity;
+                break;
+            case ("trafincante"):
+                trafincante = 1==quantity;
+                break;
+            case ("armario"):
+                armario = 1==quantity;
                 break;
             case ("happines"):
                 happines += quantity;
@@ -338,7 +348,9 @@ public enum DecisionsVars
     family ,
     friends,
     partner,
-    happines
+    happines,
+    work,
+    armario
 }
 public enum etapas
 {
