@@ -11717,6 +11717,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2426015615050297668, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
+      propertyPath: m_Event
+      value: 
+      objectReference: {fileID: 11400000, guid: c8b12c455e0243649b7e1f4aa1a71b8b, type: 2}
+    - target: {fileID: 8859403402668469985, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
+      propertyPath: m_Event
+      value: 
+      objectReference: {fileID: 11400000, guid: 298ab8efef2ba3b4f97a784c8abd6008, type: 2}
+    - target: {fileID: 9192370121944224501, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
+      propertyPath: Key
+      value: sala1Respuesta2
+      objectReference: {fileID: 0}
     - target: {fileID: 9192370122309161099, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -11780,6 +11792,14 @@ PrefabInstance:
     - target: {fileID: 9192370122309161111, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192370122413063346, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
+      propertyPath: Key
+      value: sala1Pregunta
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192370123108820558, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
+      propertyPath: Key
+      value: sala1Respuesta1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cfa4f24bf2507142953a8904c39936f, type: 3}
